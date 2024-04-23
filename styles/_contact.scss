@@ -1,0 +1,40 @@
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .contact-us-form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        label{
+            margin-bottom: 15px;
+        }
+        input,button{
+            padding: 10px;
+            margin-bottom: 15px;
+            border:1px solid #ccc;
+            border-radius: 5px;
+        }
+    }
+}
+//media etiketler
+
+@media(min-width:768px) {
+    .contact-us{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    .contact-us img,
+    .contact-us-form{
+        width: 48%;
+    }
+    
+}
